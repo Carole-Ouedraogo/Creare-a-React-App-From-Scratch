@@ -1,4 +1,4 @@
-# Creare a React App From Scratch 
+Creare a React App From Scratch 
 
 # 1. initialize a new node package
 
