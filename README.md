@@ -42,9 +42,9 @@ this folder wil contain all the React components will be.
 import 'React' from 'react'
 import 'ReactDom' from 'react-dom'
 ReactDom.render(h1>Hello !</h1>, document.getElementById('root'))`
-this method takes 2 arguments
 ```
- 
+This method takes 2 arguments...
+
  # 7. Create a src directory
  
  `mkdir src`
@@ -74,7 +74,7 @@ Everything should be incapsulated by one <div>
  # 10. In the components folder, create a new component file DefaultButton.js child component
 In the parent component App.js:
 
-```
+```javascript
 import 'React' from 'react'
 import 'DefaultButton from './components/Butons/DefaultButton' 
 from 'react-dom'
@@ -92,11 +92,10 @@ const App = () => {
 export default App;
 ```
   
-{} Deconstructor
   
   # 11. In the child component DefaultButton.js:
   
-  ```
+  ```javascript
     import 'React' from 'react'
 
     const DefaultButton = () => {
@@ -110,8 +109,32 @@ export default App;
   export default DefaultButton;
 ``` 
 
-emmet cheatsheet https://docs.emmet.io/cheat-sheet/
+# {} Destructuring Props in React
+
+Imagine you have a person object with the following properties:
+```javascript
+const person = {
+  firstName: "Lindsay",
+  lastName: "Criswell",
+  city: "NYC"
+}
+```
+With Destructuring Props,
+
+```javascript
+const { firstName, lastName, city } = person;
+```
+
+is equivalent to:
+
+```javascript
+const firstName = person.firstName
+const lastName = person.lastName
+const city = person.city  
+```
+
+Other: emmet cheatsheet https://docs.emmet.io/cheat-sheet/
   
-  @Carole Ouedraogo
-  (06/30/2020)
+@Carole Ouedraogo
+(06/30/2020)
   
