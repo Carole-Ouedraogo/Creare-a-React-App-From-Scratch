@@ -38,7 +38,7 @@ this folder wil contain all the React components will be.
 - Add title `<title> React</title>` in the <head> tag
 - in the index.html file:
   
-```
+```javascript
 import 'React' from 'react'
 import 'ReactDom' from 'react-dom'
 ReactDom.render(h1>Hello !</h1>, document.getElementById('root'))`
